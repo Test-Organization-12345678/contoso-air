@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: data-pipeline-v2-config
+  namespace: namespace-workflow-1789710278219
+  labels:
+    app.kubernetes.io/name: data-pipeline-v2
+    kubernetes.azure.com/generator: devhub
+data:
