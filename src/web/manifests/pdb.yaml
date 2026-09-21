@@ -1,13 +1,13 @@
 apiVersion: policy/v1
 kind: PodDisruptionBudget
 metadata:
-  name: data-pipeline-v2
+  name: contoso-air-pipeline
   labels:
-    app.kubernetes.io/name: data-pipeline-v2
-    app.kubernetes.io/part-of: data-pipeline-v2-project
+    app.kubernetes.io/name: contoso-air-pipeline
+    app.kubernetes.io/part-of: contoso-air-pipeline-project
     kubernetes.azure.com/generator: devhub
 spec:
   maxUnavailable: 1
   selector:
     matchLabels:
-      app: data-pipeline-v2
+      app: contoso-air-pipeline
