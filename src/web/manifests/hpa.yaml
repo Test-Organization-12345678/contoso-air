@@ -1,16 +1,16 @@
 apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
-  name: data-pipeline-v2
+  name: contoso-air-pipeline
   labels:
-    app.kubernetes.io/name: data-pipeline-v2
-    app.kubernetes.io/part-of: data-pipeline-v2-project
+    app.kubernetes.io/name: contoso-air-pipeline
+    app.kubernetes.io/part-of: contoso-air-pipeline-project
     kubernetes.azure.com/generator: devhub
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
-    name: data-pipeline-v2
+    name: contoso-air-pipeline
   minReplicas: 1
   maxReplicas: 5
   metrics:
