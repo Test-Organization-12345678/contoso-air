@@ -2,7 +2,7 @@
 FROM node:22 AS builder
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
-COPY package.json package-lock.json .
+COPY package*.json .
 RUN npm ci
 COPY . .
 RUN npm run build          # ← build happens HERE, at image build time
