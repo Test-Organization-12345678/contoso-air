@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: contoso-air-pipeline
-          image: akscourseregistry.azurecr.io/image-workflow-1789710278219:latest
+          image: akscourseregistry.azurecr.io/dev:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
