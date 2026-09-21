@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
         - name: contoso-air-pipeline
-          image: akscourseregistry.azurecr.io/dev:latest
+          image: myregistrygbql.azurecr.io/dev:latest
           imagePullPolicy: Always
           ports:
             - containerPort: 3000
